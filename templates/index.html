@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="cs">
+<head>
+    <meta charset="UTF-8">
+    <title>TrashSight</title>
+    <link rel="stylesheet" href="/static/css/styles.css">
+</head>
+<body>
+    <header>
+        <img src="/static/images/logo.jpeg" alt="Logo TrashSight">
+        <h1>TrashSight</h1>
+        <p class="slogan">Vidíme, co ostatní přehlížejí.</p>
+    </header>
+
+    <section class="info">
+        <h2>O TrashSightu</h2>
+        <p>TrashSight je chytrý nástroj, který pomocí umělé inteligence analyzuje naplněnost nádob na odpad. Stačí nahrát fotku – o zbytek se postará náš algoritmus.</p>
+    </section>
+
+    <section class="how-it-works">
+        <h2>Jak to funguje?</h2>
+        <ol>
+            <li>Vyfoť nádobu na odpad</li>
+            <li>Nahraj fotku přes formulář níže</li>
+            <li>AI zjistí, jak moc je plná</li>
+        </ol>
+    </section>
+
+    <section class="upload-section">
+        <h2>Nahraj fotku</h2>
+        <form action="/upload/" enctype="multipart/form-data" method="post">
+            <input type="file" name="file" accept="image/*" required>
+            <button type="submit">Analyzovat</button>
+        </form>
+    </section>
+</body>
+</html>
